@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const POSICAOATUAL = window.scrollY;
 
         if (POSICAOATUAL < ALTURAHERO) {
-            ocultaElementosDoHeader;
+            ocultaElementosDoHeader();
         } else {
-            exibeElementosDoHeader;
+            exibeElementosDoHeader();
         }
     })
 
@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 function ocultaElementosDoHeader() {
-    const HEADER = document.querySelector('.header');
+    const HEADER = document.querySelector('header');
     HEADER.classList.add('header--is--hidden');
 }
 
 function exibeElementosDoHeader() {
-    const HEADER = document.querySelector('.header');
+    const HEADER = document.querySelector('header');
     HEADER.classList.remove('header--is--hidden');
 }
 
